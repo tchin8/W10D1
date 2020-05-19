@@ -2,14 +2,16 @@
 html {
   box-sizing: border-box;
   background: #A9DBB8;
+  font-family: 'helvetica neue';
   text-align: center;
 }
 
 h1 {
   color: #F0F2EF;
-  font-family: 'helvetica neue';
-  font-size: 20px;
-  font-weight: 200;
+  /* font-family: 'helvetica neue'; */
+  font-size: 60px;
+  font-weight: bold;
+  padding: 50px 0 50px 0;
 }
 
 .header {
@@ -52,10 +54,52 @@ h1 {
   transform: translateX(0%) scale(1);
 }
 
-/* */
+/* Clock */
+
+
+
+.clock-holder {
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  padding: 16px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  /* bottom: -50px; */
+}
+
+
+/* Dog Dropdown */
+
+.drop-down-dog-nav {
+  background-color: white;
+  border: 1px solid white;
+  border-radius:  4px;
+  height: 54px;
+  width: 112px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+nav > h3 {
+  color: grey;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.dog-link:link, .dog-link:visited {
+  color: grey;
+}
 
 .dog-link {
+  
   display: none;
+  /* line-height: 2; */
+  padding: 4px;
+  text-align: left;
 }
 
 .show {
@@ -63,6 +107,99 @@ h1 {
 }
 
 .drop-down-dog-list {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  /* right: px; */
+  width: 100%;
+}
+
+
+/* Todo List */
+
+.todo-container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* margin auto centers it :) */
+  max-width: 90%;
+}
+
+.todo-container > h2 {
+  font-size: 24px;
+  /* font-weight: bold; */
+  padding-bottom: 16px;
+  padding-top: 40px;
+  text-decoration: underline;
+}
+
+.todo-container > form {
+  padding-bottom: 40px;
+}
+
+.todos li {
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: lighter;
+  padding-bottom: 4px;
+}
+
+.add-todo-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-todo-form > input[type="text"] {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  width: 300px;
+}
+
+.add-todo-form > input[type="submit"] {
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+}
+
+
+/* slide and scroll */
+
+.slide-and-scroll {
+  background-color: whitesmoke;
+  margin: auto;
+  max-width: 90%;
+}
+
+.slide-and-scroll h2 {
+  padding-top: 40px;
+  text-align: left;
+}
+
+.slide-and-scroll > * {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0 40px 0 40px;
+}
+
+.slide-and-scroll p {
+  text-align: justify;
+}
+
+/* .slide-and-scroll img {
+  margin: 10px;
+} */
+/* 
+img.align-right {
+  padding: 10px 10px 10px 0;
+} */
+
+.slide-and-scroll:last-child {
+  padding-bottom: 40px;
 }
